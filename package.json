@@ -1,0 +1,13 @@
+{
+  "name": "stockMarketMultiApi",
+  "version": "1.0.0",
+  "description": "API server for fetching various data from Yahoo Finance",
+  "main": "index.js",
+  "scripts": {
+    "start": "node stockMarketMultiApi.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "yahoo-finance2": "^2.1.0"
+  }
+}
