@@ -1,5 +1,5 @@
 const express = require('express');
-const yahooFinance = require('yahoo-finance2');
+const yahooFinance = require('yahoo-finance2').default;
 
 const app = express();
 const PORT = process.env.PORT || 3000;
