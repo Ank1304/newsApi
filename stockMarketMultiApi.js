@@ -30,7 +30,7 @@ app.get('/api/insights/:symbol', async (req, res) => {
     const result = await yahooFinance.insights(symbol, queryOptions);
 
     // Extract insights from the result
-    const insights = result.insights;
+    const insights = result;
 
     // Send the insights as a response
     res.json(insights);
@@ -49,7 +49,7 @@ app.get('/api/options/:symbol', async (req, res) => {
     const result = await yahooFinance.options(symbol, queryOptions);
 
     // Extract options data from the result
-    const optionsData = result.options;
+    const optionsData = result;
 
     // Send the options data as a response
     res.json(optionsData);
