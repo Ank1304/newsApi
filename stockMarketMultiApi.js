@@ -26,7 +26,7 @@ app.get('/api/news/:query', async (req, res) => {
 app.get('/api/insights/:symbol', async (req, res) => {
   try {
     const symbol = req.params.symbol;
-    const queryOptions = { lang: 'en-US', reportsCount: 100, region: 'US' };
+    const queryOptions = { lang: 'en-US', reportsCount: 100, region: 'IN' };
     const result = await yahooFinance.insights(symbol, queryOptions);
 
     // Extract insights from the result
